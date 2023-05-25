@@ -42,7 +42,8 @@ fetch('https://reqres.in/api/users?page=2', {
 
 
 
-let getInfoDiv = document.querySelector(".post_block");
+let getInfoDiv = document.getElementById("postDiv");
+// let getInfoDiv = document.querySelector(".post_block");
 
 fetch("https://jsonplaceholder.typicode.com/posts", {
   method: "GET",
