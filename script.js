@@ -42,7 +42,7 @@ fetch('https://reqres.in/api/users?page=2', {
 
 
 
-let mainDiv = document.querySelector(".post_block");
+let getInfoDiv = document.querySelector(".post_block");
 
 fetch("https://jsonplaceholder.typicode.com/posts", {
   method: "GET",
@@ -70,6 +70,6 @@ function createPost(item) {
   divWraper.appendChild(h2Teg);
   divWraper.appendChild(h3Teg);
 
-  mainDiv.appendChild(divWraper);
+  getInfoDiv.appendChild(divWraper);
   console.log(divWraper);
 }
